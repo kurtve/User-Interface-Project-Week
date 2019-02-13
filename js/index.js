@@ -1,1 +1,4 @@
-// JS goes here
+// S&J Architects
+"use strict";
+
+
