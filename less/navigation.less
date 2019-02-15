@@ -4,11 +4,41 @@
 	position: fixed;
 	top: 0;
 	z-index: 2;
-	background-color: @nav-grey;
 	width: 100%;
-	height: @navbar-height;
-	padding-bottom: 20px;
  }
+
+.navbar {
+ 	width: 100%;
+ 	max-width: 1024px;
+ 	height: @navbar-height;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+ 	height: @navbar-height;
+	background-color: @nav-bg;
+	color: @white;
+
+	h1 {
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+}
+
+.navicon {
+ 	background-image: url("../img/nav-hamburger.png");
+ 	height:21px;
+ 	width: 32px;
+}
+
+.hide {
+ 	display: none;
+}
+
+.navpane {
+
+}
 
 .nav-spacer {
 	width: 100%;

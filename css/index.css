@@ -144,25 +144,71 @@ html,
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 4%;
-}
 .nav-container {
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #B0B0B0;
   width: 100%;
-  height: 80px;
-  padding-bottom: 20px;
+}
+.navbar {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 50px;
+  background-color: #99A4AF;
+  color: #FFFFFF;
+}
+.navbar h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.navicon {
+  background-image: url("../img/nav-hamburger.png");
+  height: 21px;
+  width: 32px;
+}
+.hide {
+  display: none;
 }
 .nav-spacer {
   width: 100%;
-  height: 80px;
+  height: 50px;
 }
 .footer {
   background: #828282;
+}
+.home-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.home-container h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #504545;
+  max-width: 400px;
+}
+.home-container h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.home-container p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.home-container .offset-box {
+  height: 90px;
+  width: 300px;
+  font-size: 2.6rem;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  background-color: #D8D8D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
