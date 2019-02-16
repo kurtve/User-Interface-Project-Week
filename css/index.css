@@ -134,6 +134,14 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+/* let's reset button also */
+button {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -143,6 +151,9 @@ html {
 html,
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
+}
+.hide {
+  display: none;
 }
 .nav-container {
   position: fixed;
@@ -166,13 +177,19 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.navicon {
+.navicon.open {
   background-image: url("../img/nav-hamburger.png");
   height: 21px;
   width: 32px;
 }
-.hide {
-  display: none;
+.navicon.close {
+  background-image: url("../img/nav-hamburger-close.png");
+  height: 25px;
+  width: 24px;
+}
+.navpane {
+  background-color: #99A4AF;
+  color: #504545;
 }
 .nav-spacer {
   width: 100%;
@@ -185,29 +202,73 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  color: #222222;
+  background-color: #FFFFFF;
 }
-.home-container h1 {
-  font-size: 6rem;
+.home-container .jumbotron {
+  background-image: url("../img/home/home-jumbotron.png");
+  height: 598px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.home-container .jumbotron h1 {
+  font-size: 6.4rem;
   font-weight: bold;
+  line-height: 7.5rem;
   color: #FFFFFF;
-  background-color: #504545;
-  max-width: 400px;
+  background-color: transparent;
+  max-width: 350px;
+  margin-left: 80px;
+  margin-bottom: 50px;
 }
 .home-container h2 {
+  /* style guide notwithstanding, the mockup is most definitely *not* 28px */
   font-size: 2.4rem;
   font-weight: bold;
 }
 .home-container p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 2.4rem;
 }
-.home-container .offset-box {
+.home-container .about {
+  margin: 50px 7%;
+}
+.home-container .about .about-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.home-container .about .about-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.home-container .about .about-text {
+  width: 48%;
+}
+.home-container .about .about-text p {
+  margin: 30px 0;
+}
+.home-container .about .about-text button {
+  border: 1px solid #222222;
+  height: 50px;
+  width: 140px;
+  font-size: 1.6rem;
+}
+.home-container .about .about-img {
+  width: 48%;
+  height: auto;
+}
+.home-container .recent .offset-box {
   height: 90px;
   width: 300px;
   font-size: 2.6rem;
   font-weight: lighter;
   letter-spacing: 4px;
   background-color: #D8D8D8;
+  color: #222222;
   display: flex;
   justify-content: center;
   align-items: center;

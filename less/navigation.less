@@ -18,7 +18,7 @@
 	padding: 0 5%;
  	height: @navbar-height;
 	background-color: @nav-bg;
-	color: @white;
+	color: @nav-color;
 
 	h1 {
 		font-size: 2.4rem;
@@ -26,18 +26,21 @@
 	}
 }
 
-.navicon {
+.navicon.open {
  	background-image: url("../img/nav-hamburger.png");
  	height:21px;
  	width: 32px;
 }
 
-.hide {
- 	display: none;
+.navicon.close {
+ 	background-image: url("../img/nav-hamburger-close.png");
+ 	height:25px;
+ 	width: 24px;
 }
 
 .navpane {
-
+	background-color: @navpane-bg;
+	color: @navpane-color;
 }
 
 .nav-spacer {
