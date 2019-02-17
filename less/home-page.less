@@ -43,8 +43,9 @@
 
 	.about {
 		width: 100%;
-		margin: 50px 0;
-		padding: 0 7%;
+		max-width: 895px;
+		margin: 50px auto;
+		padding: 0 20px;
 	
 		.about-item {
 			display: flex;
@@ -96,7 +97,9 @@
 
 	.recent {
 		width: 100%;
-		padding: 0 7%;
+		max-width: 895px;
+		margin: 0 auto;
+		padding: 0 20px;
 		
 		.recent-item {
 			padding-bottom: 30px;
@@ -115,22 +118,17 @@
 			width: 100%;
 			margin: 40px 0 50px;
 
-			.recent-image {
-				background-repeat: no-repeat;
-				background-size: cover;
-				height: 230px;
-				width: 100%;
-			}
+			background-repeat: no-repeat;
 
-			.recent-img1 {
+			&.recent-img1 {
 				background-image: url("../img/home/home-villas-img.png");
 			}
 
-			.recent-img2 {
+			&.recent-img2 {
 				background-image: url("../img/home/home-outskirts-img.png");
 			}
 
-			.recent-img3 {
+			&.recent-img3 {
 				background-image: url("../img/home/home-the-blocks-img.png");
 			}
 
@@ -152,9 +150,14 @@
 				align-items: center;
 			}
 	
-			.offset-even {
-				right: unset;
-				left: 0;
+		}
+
+		.recent-item:nth-of-type(even) {
+			.recent-box {
+				.offset-box {
+					right: unset;
+					left: 0;
+				}
 			}
 		}
 	}

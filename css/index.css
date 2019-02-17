@@ -276,8 +276,9 @@ footer .copyright p {
 }
 .home-container .about {
   width: 100%;
-  margin: 50px 0;
-  padding: 0 7%;
+  max-width: 895px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 .home-container .about .about-item {
   display: flex;
@@ -318,7 +319,9 @@ footer .copyright p {
 }
 .home-container .recent {
   width: 100%;
-  padding: 0 7%;
+  max-width: 895px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .home-container .recent .recent-item {
   padding-bottom: 30px;
@@ -334,20 +337,15 @@ footer .copyright p {
   height: 270px;
   width: 100%;
   margin: 40px 0 50px;
-}
-.home-container .recent .recent-box .recent-image {
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 230px;
-  width: 100%;
 }
-.home-container .recent .recent-box .recent-img1 {
+.home-container .recent .recent-box.recent-img1 {
   background-image: url("../img/home/home-villas-img.png");
 }
-.home-container .recent .recent-box .recent-img2 {
+.home-container .recent .recent-box.recent-img2 {
   background-image: url("../img/home/home-outskirts-img.png");
 }
-.home-container .recent .recent-box .recent-img3 {
+.home-container .recent .recent-box.recent-img3 {
   background-image: url("../img/home/home-the-blocks-img.png");
 }
 .home-container .recent .recent-box .offset-box {
@@ -366,7 +364,7 @@ footer .copyright p {
   justify-content: center;
   align-items: center;
 }
-.home-container .recent .recent-box .offset-even {
+.home-container .recent .recent-item:nth-of-type(even) .recent-box .offset-box {
   right: unset;
   left: 0;
 }
