@@ -42,7 +42,9 @@
 
 
 	.about {
-		margin: 50px 7%;
+		width: 100%;
+		margin: 50px 0;
+		padding: 0 7%;
 	
 		.about-item {
 			display: flex;
@@ -68,31 +70,93 @@
 				height: 50px;
 				width: 140px;
 				font-size: 1.6rem;
+
+				&:hover {
+					cursor: pointer;
+				}
 			}
+
 		}
 
-		.about-img {
+		.about-image {
+			background-size: cover;
+			background-repeat: no-repeat;
 			width: 48%;
-			height: auto;
+			height: 275px;
 		}
 
+		.about-img1 {
+			background-image: url("../img/home/home-img-1.png");
+		}
+
+		.about-img2 {
+			background-image: url("../img/home/home-img-2.png");
+		}
 	}
 
 	.recent {
-
-		.offset-box {
-			height: 90px;
-			width: 300px;
-			font-size: 2.6rem;
-			font-weight: lighter;
-			letter-spacing: 4px;
-			background-color: @offset-bg;
-			color: @offset-color;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+		width: 100%;
+		padding: 0 7%;
+		
+		.recent-item {
+			padding-bottom: 30px;
 		}
 
+		p {
+			margin: 25px auto;
+			width: 450px;
+			font-size: 1.8rem;
+			line-height: 2.4rem;
+		}
+
+		.recent-box {
+			position: relative;
+			height: 270px;
+			width: 100%;
+			margin: 40px 0 50px;
+
+			.recent-image {
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 230px;
+				width: 100%;
+			}
+
+			.recent-img1 {
+				background-image: url("../img/home/home-villas-img.png");
+			}
+
+			.recent-img2 {
+				background-image: url("../img/home/home-outskirts-img.png");
+			}
+
+			.recent-img3 {
+				background-image: url("../img/home/home-the-blocks-img.png");
+			}
+
+			.offset-box {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+
+				height: 90px;
+				width: 320px;
+				font-size: 2.6rem;
+				font-weight: lighter;
+				letter-spacing: 5px;
+				background-color: @offset-bg;
+				color: @offset-color;
+				border: 1px solid @home-bg;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.offset-even {
+				right: unset;
+				left: 0;
+			}
+		}
 	}
 
 } // home-container

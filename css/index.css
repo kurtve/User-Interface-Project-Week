@@ -164,12 +164,12 @@ body {
 .navbar {
   width: 100%;
   max-width: 1024px;
+  height: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-  height: 50px;
   background-color: #99A4AF;
   color: #FFFFFF;
 }
@@ -190,10 +190,6 @@ body {
 .navpane {
   background-color: #99A4AF;
   color: #504545;
-}
-.nav-spacer {
-  width: 100%;
-  height: 50px;
 }
 .footer {
   background: #828282;
@@ -233,7 +229,9 @@ body {
   line-height: 2.4rem;
 }
 .home-container .about {
-  margin: 50px 7%;
+  width: 100%;
+  margin: 50px 0;
+  padding: 0 7%;
 }
 .home-container .about .about-item {
   display: flex;
@@ -257,19 +255,72 @@ body {
   width: 140px;
   font-size: 1.6rem;
 }
-.home-container .about .about-img {
-  width: 48%;
-  height: auto;
+.home-container .about .about-text button:hover {
+  cursor: pointer;
 }
-.home-container .recent .offset-box {
+.home-container .about .about-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48%;
+  height: 275px;
+}
+.home-container .about .about-img1 {
+  background-image: url("../img/home/home-img-1.png");
+}
+.home-container .about .about-img2 {
+  background-image: url("../img/home/home-img-2.png");
+}
+.home-container .recent {
+  width: 100%;
+  padding: 0 7%;
+}
+.home-container .recent .recent-item {
+  padding-bottom: 30px;
+}
+.home-container .recent p {
+  margin: 25px auto;
+  width: 450px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.home-container .recent .recent-box {
+  position: relative;
+  height: 270px;
+  width: 100%;
+  margin: 40px 0 50px;
+}
+.home-container .recent .recent-box .recent-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 100%;
+}
+.home-container .recent .recent-box .recent-img1 {
+  background-image: url("../img/home/home-villas-img.png");
+}
+.home-container .recent .recent-box .recent-img2 {
+  background-image: url("../img/home/home-outskirts-img.png");
+}
+.home-container .recent .recent-box .recent-img3 {
+  background-image: url("../img/home/home-the-blocks-img.png");
+}
+.home-container .recent .recent-box .offset-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   height: 90px;
-  width: 300px;
+  width: 320px;
   font-size: 2.6rem;
   font-weight: lighter;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   background-color: #D8D8D8;
   color: #222222;
+  border: 1px solid #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home-container .recent .recent-box .offset-even {
+  right: unset;
+  left: 0;
 }
