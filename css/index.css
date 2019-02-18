@@ -152,10 +152,7 @@ html,
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
-.hide {
-  display: none;
-}
-.nav-container {
+.navigation {
   position: fixed;
   top: 0;
   z-index: 2;
@@ -172,24 +169,63 @@ body {
   padding: 0 5%;
   background-color: #99A4AF;
   color: #FFFFFF;
+  opacity: 0.95;
 }
 .navbar h1 {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.navicon.open {
+.navicon.closed {
   background-image: url("../img/nav-hamburger.png");
   height: 21px;
   width: 32px;
 }
-.navicon.close {
+.navicon.open {
   background-image: url("../img/nav-hamburger-close.png");
   height: 25px;
   width: 24px;
 }
+.navicon:hover {
+  cursor: pointer;
+}
 .navpane {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
   background-color: #99A4AF;
+  color: #FFFFFF;
+  opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navpane.full-screen {
+  min-height: 100vh;
+}
+.navpane nav {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.navpane nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 4.8rem;
+  line-height: 8.5rem;
+  font-weight: bold;
+}
+.navpane nav a:visited {
+  color: #FFFFFF;
+}
+.navpane nav a:hover {
+  cursor: pointer;
   color: #504545;
+}
+.navpane.hide {
+  display: none;
 }
 footer {
   background-color: #828282;
