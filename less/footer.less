@@ -22,6 +22,17 @@ footer {
 		margin-bottom: 5px;
 	}
 
+	@media @phone {
+		padding-top: 17px;
+		align-items: flex-start;
+		margin-top: 28px;
+		max-width: 320px;
+
+		h2 {
+			margin-bottom: 8px;
+		}
+	}
+
 	.footer-main {
 		width: 100%;
 		padding: 10px 5%;
@@ -29,6 +40,12 @@ footer {
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+
+		@media @phone {
+			flex-direction: column;
+			align-items: flex-start;
+
+		}
 
 		.footer-contact {
 			width: 280px;
@@ -50,13 +67,22 @@ footer {
 
 		.location {
 			padding: 5px;
+
+			@media @phone {
+				margin-top: 10px;
+			}
 		}
 	}
 
 	.copyright {
 		p {
-			margin: 10px 0 5px;
+			margin: 10px 20px 5px;
 			font-size: 1.2rem;
 		}
+
+		@media @phone {
+			margin-bottom: 15px;
+		}
 	}
+
 }

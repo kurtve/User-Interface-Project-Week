@@ -175,6 +175,11 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .navbar {
+    max-width: 320px;
+  }
+}
 .navicon.closed {
   background-image: url("../img/nav-hamburger.png");
   height: 21px;
@@ -200,6 +205,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .navpane {
+    max-width: 320px;
+  }
+}
 .navpane.full-screen {
   min-height: 100vh;
 }
@@ -214,8 +224,8 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 4.8rem;
-  line-height: 8.5rem;
   font-weight: bold;
+  padding-bottom: 4rem;
 }
 .navpane nav a:visited {
   color: #FFFFFF;
@@ -246,6 +256,17 @@ footer h2 {
   line-height: 2.4rem;
   margin-bottom: 5px;
 }
+@media (max-width: 500px) {
+  footer {
+    padding-top: 17px;
+    align-items: flex-start;
+    margin-top: 28px;
+    max-width: 320px;
+  }
+  footer h2 {
+    margin-bottom: 8px;
+  }
+}
 footer .footer-main {
   width: 100%;
   padding: 10px 5%;
@@ -253,6 +274,12 @@ footer .footer-main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 footer .footer-main .footer-contact {
   width: 280px;
@@ -272,9 +299,19 @@ footer .footer-main .footer-contact p {
 footer .footer-main .location {
   padding: 5px;
 }
+@media (max-width: 500px) {
+  footer .footer-main .location {
+    margin-top: 10px;
+  }
+}
 footer .copyright p {
-  margin: 10px 0 5px;
+  margin: 10px 20px 5px;
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    margin-bottom: 15px;
+  }
 }
 .home-container {
   max-width: 1024px;
@@ -298,8 +335,23 @@ footer .copyright p {
   color: #FFFFFF;
   background-color: transparent;
   max-width: 350px;
-  margin-left: 80px;
+  margin-left: 8%;
   margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .home-container {
+    max-width: 320px;
+  }
+  .home-container .jumbotron {
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    height: 260px;
+  }
+  .home-container .jumbotron h1 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    max-width: 200px;
+    margin-bottom: 25px;
+  }
 }
 .home-container h2 {
   /* style guide notwithstanding, the mockup is most definitely *not* 28px */
@@ -326,6 +378,20 @@ footer .copyright p {
 .home-container .about .about-item:nth-child(even) {
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .home-container .about {
+    max-width: 290px;
+    padding: 0;
+    margin: 40px auto;
+  }
+  .home-container .about .about-item {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  .home-container .about .about-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
 .home-container .about .about-text {
   width: 48%;
 }
@@ -341,6 +407,17 @@ footer .copyright p {
 .home-container .about .about-text button:hover {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home-container .about .about-text {
+    width: 100%;
+  }
+  .home-container .about .about-text p {
+    margin: 20px 0;
+  }
+  .home-container .about .about-text button {
+    width: 100%;
+  }
+}
 .home-container .about .about-image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,14 +430,35 @@ footer .copyright p {
 .home-container .about .about-img2 {
   background-image: url("../img/home/home-img-2.png");
 }
+@media (max-width: 500px) {
+  .home-container .about .about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .home-container .about .about-img1 {
+    background-image: url("../img/home/home-mobile-img-1.png");
+  }
+  .home-container .about .about-img2 {
+    background-image: url("../img/home/home-mobile-img-2.png");
+  }
+}
 .home-container .recent {
   width: 100%;
   max-width: 895px;
   margin: 0 auto;
   padding: 0 20px;
 }
+@media (max-width: 500px) {
+  .home-container .recent {
+    max-width: 320px;
+    padding: 0;
+  }
+  .home-container .recent h2 {
+    margin: 0 15px 20px;
+  }
+}
 .home-container .recent .recent-item {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .home-container .recent p {
   margin: 25px auto;
@@ -368,11 +466,16 @@ footer .copyright p {
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
+@media (max-width: 500px) {
+  .home-container .recent p {
+    width: 280px;
+  }
+}
 .home-container .recent .recent-box {
   position: relative;
   height: 270px;
   width: 100%;
-  margin: 40px 0 50px;
+  margin: 40px 0 60px;
   background-repeat: no-repeat;
 }
 .home-container .recent .recent-box.recent-img1 {
@@ -383,6 +486,21 @@ footer .copyright p {
 }
 .home-container .recent .recent-box.recent-img3 {
   background-image: url("../img/home/home-the-blocks-img.png");
+}
+@media (max-width: 500px) {
+  .home-container .recent .recent-box {
+    height: 285px;
+    margin: 0 0 30px;
+  }
+  .home-container .recent .recent-box.recent-img1 {
+    background-image: url("../img/home/home-mobile-villas-img.png");
+  }
+  .home-container .recent .recent-box.recent-img2 {
+    background-image: url("../img/home/home-mobile-outskirts-img.png");
+  }
+  .home-container .recent .recent-box.recent-img3 {
+    background-image: url("../img/home/home-mobile-the-blocks-img.png");
+  }
 }
 .home-container .recent .recent-box .offset-box {
   position: absolute;
@@ -400,7 +518,14 @@ footer .copyright p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home-container .recent .recent-box .offset-box {
+    width: 280px;
+    height: 95px;
+    margin: 0 20px;
+    border: none;
+  }
+}
 .home-container .recent .recent-item:nth-of-type(even) .recent-box .offset-box {
-  right: unset;
   left: 0;
 }

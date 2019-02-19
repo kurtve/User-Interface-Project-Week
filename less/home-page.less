@@ -23,8 +23,25 @@
 			color: @jumbo-color;
 			background-color: transparent;
 			max-width: 350px;
-			margin-left: 80px;
+			margin-left: 8%;
 			margin-bottom: 50px;
+		}
+
+	}
+
+	@media @phone {
+		max-width: 320px;
+
+		.jumbotron {
+			background-image: url("../img/home/home-mobile-jumbotron.png");
+ 			height: 260px;
+
+ 			h1 {
+ 				font-size: 3.4rem;
+ 				line-height: 4rem;
+ 				max-width: 200px;
+ 				margin-bottom: 25px;
+ 			}
 		}
 	}
 
@@ -59,6 +76,21 @@
 			flex-direction: row-reverse;
 		}
 
+		@media @phone {
+			max-width: 290px;
+			padding: 0;
+			margin: 40px auto;
+
+			.about-item {
+				flex-direction: column-reverse;
+				margin-bottom: 50px;
+			}
+			.about-item:nth-child(even) {
+				flex-direction: column-reverse;
+			}
+
+		}
+
 		.about-text {
 			width: 48%;
 
@@ -77,6 +109,15 @@
 				}
 			}
 
+			@media @phone {
+				width: 100%;
+				p {
+					margin: 20px 0;
+				}
+				button {
+					width: 100%;
+				}
+			}
 		}
 
 		.about-image {
@@ -93,6 +134,20 @@
 		.about-img2 {
 			background-image: url("../img/home/home-img-2.png");
 		}
+
+		@media @phone {
+			.about-image {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+			.about-img1 {
+				background-image: url("../img/home/home-mobile-img-1.png");
+			}
+			.about-img2 {
+				background-image: url("../img/home/home-mobile-img-2.png");
+			}
+		}
+
 	}
 
 	.recent {
@@ -101,8 +156,17 @@
 		margin: 0 auto;
 		padding: 0 20px;
 		
+		@media @phone {
+			max-width: 320px;
+			padding: 0;
+
+			h2 {
+				margin: 0 15px 20px;
+			}
+		}
+
 		.recent-item {
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 		}
 
 		p {
@@ -110,13 +174,17 @@
 			width: 450px;
 			font-size: 1.8rem;
 			line-height: 2.4rem;
+
+			@media @phone {
+				width: 280px;
+			}
 		}
 
 		.recent-box {
 			position: relative;
 			height: 270px;
 			width: 100%;
-			margin: 40px 0 50px;
+			margin: 40px 0 60px;
 
 			background-repeat: no-repeat;
 
@@ -130,6 +198,24 @@
 
 			&.recent-img3 {
 				background-image: url("../img/home/home-the-blocks-img.png");
+			}
+
+			@media @phone {
+				height: 285px;
+				margin: 0 0 30px;
+
+				&.recent-img1 {
+					background-image: url("../img/home/home-mobile-villas-img.png");
+				}
+
+				&.recent-img2 {
+					background-image: url("../img/home/home-mobile-outskirts-img.png");
+				}
+
+				&.recent-img3 {
+					background-image: url("../img/home/home-mobile-the-blocks-img.png");
+				}
+
 			}
 
 			.offset-box {
@@ -148,18 +234,25 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+
+				@media @phone {
+					width: 280px;
+					height: 95px;
+					margin: 0 20px;
+					border: none;
+				}
 			}
-	
+		
 		}
 
 		.recent-item:nth-of-type(even) {
 			.recent-box {
 				.offset-box {
-					right: unset;
 					left: 0;
 				}
 			}
 		}
+
 	}
 
 } // home-container

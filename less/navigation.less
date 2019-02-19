@@ -25,6 +25,10 @@
 		font-size: 2.4rem;
 		font-weight: bold;
 	}
+
+	@media @phone {
+		max-width: 320px;
+	}
 }
 
 .navicon.closed {
@@ -58,6 +62,10 @@
 	justify-content: center;
 	align-items: center;
 
+	@media @phone {
+		max-width: 320px;
+	}
+
 	&.full-screen {
 		min-height: 100vh;
 	}
@@ -73,8 +81,8 @@
 			text-decoration: none;
 			color: @nav-color;
 			font-size: 4.8rem;
-			line-height: 8.5rem;
 			font-weight: bold;
+			padding-bottom: 4rem;  // instead of line-height: 8.5rem;
 
 			&:visited {
 				color: @nav-color;
