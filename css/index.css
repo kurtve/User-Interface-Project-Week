@@ -586,7 +586,7 @@ footer .copyright p {
 }
 .services-container p {
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
   margin: 10px 0;
 }
 .services-container .services-tabs {
@@ -619,29 +619,82 @@ footer .copyright p {
   background-color: #5E9FB9;
   color: #FFFFFF;
 }
-.services-container .services-tabs .svc-tab-item-img1 {
-  background-image: url("../img/services/tab-pre-construction-img.png");
+@media (max-width: 500px) {
+  .services-container .services-tabs {
+    width: 100%;
+    max-width: 320px;
+    padding: 0 15px;
+  }
+  .services-container .services-tabs .svc-tab-links .svc-tab-link {
+    width: 100%;
+  }
 }
-.services-container .services-tabs .svc-tab-item-img2 {
-  background-image: url("../img/services/tab-construction-img.png");
+.services-container .services-tabs .svc-tab-items p {
+  margin-bottom: 25px;
 }
-.services-container .services-tabs .svc-tab-item-img3 {
-  background-image: url("../img/services/tab-design-build-img.png");
+.services-container .services-tabs .svc-tab-items .svc-tab-item {
+  margin-top: 40px;
+  padding-bottom: 15px;
+  width: 100%;
+  display: none;
 }
-.services-container .services-tabs .svc-tab-item-img4 {
-  background-image: url("../img/services/tab-sustainability-img.png");
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box .svc-tab-item-text {
+  width: 48.5%;
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box .svc-tab-item-img {
+  margin-top: 5px;
+  width: 47%;
+  height: 275px;
+  background-repeat: no-repeat;
 }
 @media (max-width: 500px) {
-  .services-container .services-tabs .svc-tab-item-img1 {
-    background-image: url("../img/services/tab-mobile-pre-construction-img.png");
+  .services-container .services-tabs .svc-tab-items .svc-tab-item {
+    padding-bottom: 30px;
   }
-  .services-container .services-tabs .svc-tab-item-img2 {
-    background-image: url("../img/services/tab-mobile-construction-img.png");
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box {
+    flex-direction: column;
   }
-  .services-container .services-tabs .svc-tab-item-img3 {
-    background-image: url("../img/services/tab-mobile-design-build-img.png");
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box .svc-tab-item-text {
+    width: 100%;
   }
-  .services-container .services-tabs .svc-tab-item-img4 {
-    background-image: url("../img/services/tab-mobile-sustainability-img.png");
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-box .svc-tab-item-img {
+    width: 100%;
+    height: 290px;
   }
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img1 {
+  background-image: url("../img/services/services-tab-pre-construction-img.png");
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img2 {
+  background-image: url("../img/services/services-tab-construction-img.png");
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img3 {
+  background-image: url("../img/services/services-tab-design-build-img.png");
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img4 {
+  background-image: url("../img/services/services-tab-sustainability-img.png");
+}
+@media (max-width: 500px) {
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img1 {
+    background-image: url("../img/services/services-tab-mobile-pre-construction-img.png");
+  }
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img2 {
+    background-image: url("../img/services/services-tab-mobile-construction-img.png");
+  }
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img3 {
+    background-image: url("../img/services/services-tab-mobile-design-build-img.png");
+  }
+  .services-container .services-tabs .svc-tab-items .svc-tab-item .svc-tab-item-img4 {
+    background-image: url("../img/services/services-tab-mobile-sustainability-img.png");
+  }
+}
+.services-container .services-tabs .svc-tab-items .svc-tab-item-selected {
+  display: block;
 }
