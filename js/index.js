@@ -32,9 +32,3 @@ class Navigation {
 }
 
 new Navigation(document.querySelector(".navigation"));
-
-
-// Tab Container
-
-
-
