@@ -197,7 +197,6 @@ body {
 .navpane {
   width: 100%;
   max-width: 1024px;
-  height: 100%;
   margin: 0 auto;
   background-color: #99A4AF;
   color: #FFFFFF;
@@ -235,7 +234,7 @@ body {
   cursor: pointer;
   color: #504545;
 }
-.navpane.hide {
+.navpane.navhide {
   display: none;
 }
 footer {
@@ -697,4 +696,14 @@ footer .copyright p {
 }
 .services-container .services-tabs .svc-tab-items .svc-tab-item-selected {
   display: block;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
 }

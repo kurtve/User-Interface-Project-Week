@@ -18,7 +18,7 @@ class Navigation {
 			this.closed = false;
 			this.button.classList.remove('closed');
 			this.button.classList.add('open');
-			this.navpane.classList.remove('hide');
+			this.navpane.classList.remove('navhide');
 			this.navpane.classList.add('full-screen');
 		}
 		else {
@@ -26,7 +26,7 @@ class Navigation {
 			this.button.classList.remove('open');
 			this.button.classList.add('closed');
 			this.navpane.classList.remove('full-screen');
-			this.navpane.classList.add('hide');
+			this.navpane.classList.add('navhide');
 		}
 	}
 }

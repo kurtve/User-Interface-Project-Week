@@ -132,6 +132,7 @@
 				width: 100%;
 				display: none;
 
+
 				.svc-tab-item-box {
 					margin-top: 5px;
 					display: flex;
@@ -201,8 +202,20 @@
 
 			}
 
+
 			.svc-tab-item-selected {
 				display: block;
+				animation-duration: 1s;
+				animation-name: slidein;
+
+				@keyframes slidein {
+					from {
+						margin-left: 100%;
+					}
+					to {
+						margin-left: 0;
+					}
+				}
 			}
 
 		} // svc-tab-items
@@ -210,3 +223,7 @@
 	} // services-tabs
 
 } // services-container
+
+
+
+
