@@ -1,0 +1,229 @@
+// services-page styles
+
+.services-container {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+
+	color: @home-color;
+	background-color: @home-bg;
+
+	.services-jumbo {
+	 	background-image: url("../img/services/services-jumbotron.png");
+ 		height: 250px;
+ 		width: 100%;
+ 		display: flex;
+ 		align-items: flex-end;
+ 		justify-content: flex-start;
+
+		h1 {
+			font-size: 6.4rem;
+			font-weight: bold;
+			color: @jumbo-color;
+			background-color: transparent;
+			margin-left: 8%;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.services-about {
+		max-width: 84%;
+		margin: 50px auto 30px;
+
+		p {
+			font-size: 1.6rem;
+			line-height: 2.6rem;
+			margin: 10px 0;
+		}
+	}
+
+	@media @phone {
+		max-width: 320px;
+
+		.services-jumbo {
+			background-image: url("../img/services/services-mobile-jumbotron.png");
+ 			height: 259px;
+
+ 			h1 {
+ 				font-size: 3.6rem;
+ 				margin-bottom: 25px;
+ 				margin-left: 6%;
+ 			}
+		}
+
+		.services-about {
+			max-width: unset;
+			margin: 30px 15px;
+		}
+	}
+
+
+	h2 {
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		margin: 10px 0;
+	}
+
+
+	.services-tabs {
+		max-width: 84%;
+		margin: 0 auto;
+
+		.svc-tab-links {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			align-content: space-around;
+
+
+			.svc-tab-link {
+				height: 50px;
+				width: 185px;
+				margin: 10px 0;
+				border: 1px solid @home-color;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				font-weight: bold;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.svc-tab-link-selected {
+				background-color: @tab-bg;
+				color: @home-bg;
+			}
+
+		}
+
+		@media @phone {
+			width: 100%;
+			max-width: 320px;
+			padding: 0 15px;
+
+			.svc-tab-links {
+				.svc-tab-link {
+					width: 100%;
+				}
+			}
+
+		}
+
+
+		.svc-tab-items {
+
+			p {
+				margin-bottom: 25px;
+			}
+
+			.svc-tab-item {
+				margin-top: 40px;
+				padding-bottom: 15px;
+				width: 100%;
+				display: none;
+
+
+				.svc-tab-item-box {
+					margin-top: 5px;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: flex-start;
+
+					.svc-tab-item-text {
+						width: 48.5%;
+					}
+
+					.svc-tab-item-img {
+						margin-top: 5px;
+						width: 47%;
+						height: 275px;
+						background-repeat: no-repeat;
+					}
+				}
+			
+				@media @phone {
+					padding-bottom: 30px;
+
+					.svc-tab-item-box {
+						flex-direction: column;
+
+						.svc-tab-item-text {
+							width: 100%;
+						}
+
+						.svc-tab-item-img {
+							width: 100%;
+							height: 290px;
+						}
+					}
+
+				}
+
+
+				.svc-tab-item-img1 {
+					background-image: url("../img/services/services-tab-pre-construction-img.png");
+				}
+				.svc-tab-item-img2 {
+					background-image: url("../img/services/services-tab-construction-img.png");
+				}
+				.svc-tab-item-img3 {
+					background-image: url("../img/services/services-tab-design-build-img.png");
+				}
+				.svc-tab-item-img4 {
+					background-image: url("../img/services/services-tab-sustainability-img.png");
+				}
+
+
+				@media @phone {
+					.svc-tab-item-img1 {
+						background-image: url("../img/services/services-tab-mobile-pre-construction-img.png");
+					}
+					.svc-tab-item-img2 {
+						background-image: url("../img/services/services-tab-mobile-construction-img.png");
+					}
+					.svc-tab-item-img3 {
+						background-image: url("../img/services/services-tab-mobile-design-build-img.png");
+					}
+					.svc-tab-item-img4 {
+						background-image: url("../img/services/services-tab-mobile-sustainability-img.png");
+					}
+				}
+
+			}
+
+
+			.svc-tab-item-selected {
+				display: block;
+				animation-duration: 1s;
+				animation-name: slidein;
+
+				@keyframes slidein {
+					from {
+						margin-left: 100%;
+					}
+					to {
+						margin-left: 0;
+					}
+				}
+			}
+
+		} // svc-tab-items
+
+	} // services-tabs
+
+} // services-container
+
+
+
+
